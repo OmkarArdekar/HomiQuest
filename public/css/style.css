@@ -59,6 +59,18 @@ body {
   transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
 
+@media screen and (max-width: 600px) {
+  #searchInput {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #searchInput {
+    width: 55%;
+  }
+}
+
 /* Footer */
 .f-info-links a {
   text-decoration: none;
