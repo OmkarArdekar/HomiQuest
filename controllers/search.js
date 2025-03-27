@@ -21,6 +21,6 @@ module.exports.search = async (req, res) => {
 module.exports.searchByFilterOptions = async (req, res) => {
   const filterName = req.params.filterName;
   const filteredListings = await Listing.find({ category: filterName });
-  console.log(filteredListings);
+  // console.log(filteredListings);
   return res.json(filteredListings);
 };

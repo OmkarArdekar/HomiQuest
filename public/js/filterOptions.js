@@ -14,7 +14,7 @@ taxSwitch.addEventListener("click", () => {
 document.querySelectorAll(".filter").forEach((filter) => {
   filter.addEventListener("click", () => {
     const filterName = filter.getAttribute("data-category");
-    console.log(filterName);
+    // console.log(filterName);
 
     fetch(`/listings/search/category/${filterName}`)
       .then((response) => response.json())
