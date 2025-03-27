@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="/css/style.css" />
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/listings"
+      ><i class="fa-regular fa-compass ms-1"></i>
+      <h1 class="ms-1 mb-0 me-3" style="font-size: 1.5rem; font-weight: bold">
+        HomiQuest
+      </h1>
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse ms-2" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link mb-2" href="/listings">Explore All</a>
+      </div>
+      <div class="navbar-nav ms-auto mb-2">
+        <form
+          class="d-flex"
+          role="search"
+          action="/listings/search/category"
+          method="GET"
+        >
+          <input
+            class="form-control me-2 search-inp"
+            id="searchInput"
+            type="search"
+            name="country"
+            placeholder="Search here..!"
+          />
+          <button class="btn search-btn" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>Search
+          </button>
+        </form>
+      </div>
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link mb-2" href="/listings/new">List Your Property</a>
+        <% if(!currUser) { %>
+        <a class="nav-link mb-2" href="/signup"><b>Sign Up</b></a>
+        <a class="nav-link mb-2" href="/login"><b>Log in</b></a>
+        <% } %> <% if(currUser) { %>
+        <a class="nav-link mb-2" href="/logout"><b>Log out</b></a>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</nav>
+<script src="/js/searchBar.js"></script>
