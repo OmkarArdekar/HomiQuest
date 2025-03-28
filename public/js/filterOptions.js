@@ -15,6 +15,14 @@ document.querySelectorAll(".filter").forEach((filter) => {
   filter.addEventListener("click", () => {
     const filterName = filter.getAttribute("data-category");
     // console.log(filterName);
+    const toggleBtn = document.querySelector("#flexSwitchCheckDefault");
+    let value;
+    if (toggleBtn.checked) {
+      value = "inline";
+    } else {
+      value = "none";
+    }
+    console.log(value);
 
     fetch(`/listings/search/category/${filterName}`)
       .then((response) => response.json())
@@ -40,7 +48,10 @@ document.querySelectorAll(".filter").forEach((filter) => {
                     <p class="card-text">
                       <b>${listing.title}</b> <br />
                       &#8377; ${listing.price.toLocaleString("en-IN")} / night
-                      <i class="tax-info"> &nbsp; &nbsp;+18% GST</i>
+                      <i class="tax-info" style="display: ${value};"> &nbsp; +18% GST &nbsp; = &nbsp; &#8377; ${(
+            listing.price +
+            listing.price * 0.18
+          ).toLocaleString("en-IN")} / night</i>
                     </p>
                   </div>
                 </div>
