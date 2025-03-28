@@ -210,7 +210,7 @@ body {
 
 /* Show Page */
 .show-img {
-  height: 30vh;
+  height: 25rem;
 }
 
 .btns {
@@ -224,6 +224,5 @@ body {
 
 /* Map */
 #map {
-  height: 400px;
-  width: 86vh;
+  height: 450px;
 }
