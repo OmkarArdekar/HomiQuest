@@ -22,7 +22,7 @@ document.querySelectorAll(".filter").forEach((filter) => {
     } else {
       value = "none";
     }
-    console.log(value);
+    // console.log(value);
 
     fetch(`/listings/search/category/${filterName}`)
       .then((response) => response.json())
@@ -58,6 +58,8 @@ document.querySelectorAll(".filter").forEach((filter) => {
               </a>
             `;
         });
+
+        document.querySelector(".filter-btn").click();
       })
       .catch((error) => console.error("Error fetching data:", error));
   });

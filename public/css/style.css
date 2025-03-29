@@ -11,11 +11,13 @@ body {
 
 /* Navbar */
 .navbar {
-  height: 5rem;
+  height: 5.5rem;
   background-color: white;
 }
 
-.navbar-collapse {
+.navbar-collapse,
+.navbar-toggler,
+.navbar-toggler-icon {
   background-color: white;
 }
 
