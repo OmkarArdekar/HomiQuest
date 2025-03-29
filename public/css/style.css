@@ -130,8 +130,14 @@ body {
 }
 
 .filter-btn {
+  color: white;
   background-color: #fe424d;
   border: none;
+}
+
+.filter-btn:hover {
+  color: black;
+  background-color: #fe424d;
 }
 
 .tax-info {
@@ -159,6 +165,10 @@ body {
 
 .form-check-input {
   margin-right: 5px;
+}
+
+.form-check-input:checked {
+  background-color: #fe424d;
 }
 
 /* Cards */
