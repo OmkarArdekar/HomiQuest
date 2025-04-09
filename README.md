@@ -16,7 +16,7 @@ To get started with HomeQuest, follow the steps below:
 <p>Clone this repository to your local machine.</p>
 
 ```
-git clone <- HomiQuest Rep link ->
+git clone <- HomiQuest Repo link ->
 ```
 
 <h2>2. Install Dependencies</h2>
