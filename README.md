@@ -1,12 +1,18 @@
 # HomiQuest
 
-# HomeQuest – Rent, Host, Explore
+# HomiQuest – Rent, Host, Explore
 
-HomeQuest is an all-in-one platform that allows users to rent, host, and explore a variety of properties and houses. 
-Whether you're looking for a rental property, wanting to host your property for others, or exploring homes in different areas, HomeQuest simplifies the process. 
-With features like property listing, search, filter search, map and reviews, etc, HomeQuest provides a seamless experience for both renters and hosts.
+HomiQuest is an all-in-one platform that allows users to rent, host, and explore a variety of properties and houses. 
+Whether you're looking for a rental property, wanting to host your property for others, or exploring homes in different areas, HomiQuest simplifies the process. 
+With features like property listing, search, filter search, map and reviews, etc, HomiQuest provides a seamless experience for both renters and hosts.
 
-Live Link: <a href="https://homiquest.onrender.com">https://homiquest.onrender.com</a>
+<h5><i>
+  HomiQuest = Homi + Quest <br>
+  Homi = means Home, derived from "Home", <br>
+  Quest = meaning a search, journey, or mission to achieve something meaningful or valuable.
+</i></h5>
+
+HomiQuest Live Link: <a href="https://homiquest.onrender.com">https://homiquest.onrender.com</a>
 
 # Installation
 
@@ -16,7 +22,7 @@ To get started with HomeQuest, follow the steps below:
 <p>Clone this repository to your local machine.</p>
 
 ```
-git clone <- HomiQuest Rep link ->
+git clone <- HomiQuest Repo link ->
 ```
 
 <h2>2. Install Dependencies</h2>
